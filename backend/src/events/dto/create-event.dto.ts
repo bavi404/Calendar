@@ -1,4 +1,3 @@
-// src/events/dto/create-event.dto.ts
 import { IsNotEmpty, IsOptional, IsString, IsArray } from 'class-validator';
 
 export class CreateEventDto {

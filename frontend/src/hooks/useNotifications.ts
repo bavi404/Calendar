@@ -38,13 +38,12 @@ function showNotification(title: string, delay: number, event: any) {
   };
 
   notif.onshow = () => {
-    // Add a snooze timer (5 minutes or 10 seconds for testing)
     setTimeout(() => {
       if (!notif.closed) {
         new Notification(`🔁 Snoozed: ${title}`, {
           body: "Reminder after 5 mins (simulated: 10 seconds)",
         });
       }
-    }, 10000); // 🔁 10 seconds for demo (replace with 5 * 60 * 1000)
+    }, 10000); 
   };
 }

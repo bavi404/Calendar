@@ -1,40 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 📅 Simple Calendar App 
 
-## Getting Started
+A full-stack calendar application built with **Next.js + Refine + NestJS**, featuring:
 
-First, run the development server:
+✅ Event creation & management  
+✅ Media upload (images & videos)  
+✅ Browser notifications with snooze  
+✅ Search & filter by date or keyword
+
+---
+
+## 🚀 Live Features
+
+- 📆 Calendar UI with click-to-schedule functionality
+- 📝 Modal form to create events with title, description, date, and media
+- 📤 Upload and preview images or videos for each event
+- 🔔 Browser notifications that:
+  - Remind user when an event is due
+  - Offer snooze (5 mins)
+  - Are dismissable
+- 🔍 Search bar to filter by title/description
+- 📆 Date range filter to narrow events by time
+
+---
+
+## 💻 Tech Stack
+
+### Frontend
+
+- [Next.js](https://nextjs.org/)
+- [Refine.dev](https://refine.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Ant Design](https://ant.design/)
+- [Axios](https://axios-http.com/)
+
+### Backend
+
+- [NestJS](https://nestjs.com/)
+- In-memory DB (for this round — fast, simple testing)
+
+---
+
+## 🧑‍💻 Setup Instructions
+
+### 1. Clone the Repo
 
 ```bash
+git clone https://github.com/bavi404/Calendar
+cd Calendar
+2. Install & Run Backend
+bash
+Copy
+Edit
+cd backend
+npm install
+npm run start:dev
+Backend runs on: http://localhost:3000
+
+3. Install & Run Frontend
+bash
+Copy
+Edit
+cd ../frontend
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Frontend runs on: http://localhost:3000 (or next port if backend is already on 3000)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📁 Folder Structure
+bash
+Copy
+Edit
+Calendar/
+├── backend/        # NestJS app
+└── frontend/       # Next.js app with Refine UI
+🔧 Optional Enhancements
+🔄 Media stored as base64 (can be swapped with cloud later)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+🧠 Notification logic tied to event time dynamically
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+⏰ Snooze implementation using setTimeout (5 mins)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+👨‍🎓 Developer
+Bavishya Sankaranarayanan
+GitHub | Email
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+✅ Submitting
+This project was built as part of the technical round for the Appleute internship assignment.
 
-## Learn More
+yaml
+Copy
+Edit
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+✅ **Commit:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+```bash
+git add README.md
+git commit -m "docs: added full project README with setup and features"
+git push

@@ -1,4 +1,3 @@
-// src/events/events.service.ts
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { Event } from './event.model';
 import { CreateEventDto } from './dto/create-event.dto';
