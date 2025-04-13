@@ -88,7 +88,7 @@ Edit
 
 ---
 
-✅ **Commit:**
+Commit:
 
 ```bash
 git add README.md
