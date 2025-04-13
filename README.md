@@ -36,7 +36,7 @@ A full-stack calendar application built with **Next.js + Refine + NestJS**, feat
 ### Backend
 
 - [NestJS](https://nestjs.com/)
-- In-memory DB (for this round — fast, simple testing)
+- In-memory DB 
 
 ---
 
@@ -81,10 +81,6 @@ Calendar/
 
 👨‍🎓 Developer
 Bavishya Sankaranarayanan
-GitHub | Email
-
-✅ Submitting
-This project was built as part of the technical round for the Appleute internship assignment.
 
 yaml
 Copy
