@@ -16,5 +16,5 @@ export class CreateEventDto {
 
   @IsOptional()
   @IsArray()
-  media?: string[];
+  media?: { type: 'image' | 'video'; url: string }[];
 }
