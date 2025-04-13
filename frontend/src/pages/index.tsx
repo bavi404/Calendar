@@ -5,12 +5,16 @@ import "react-calendar/dist/Calendar.css";
 import { Modal, Button, Form, Input, DatePicker, message } from "antd";
 import dayjs from "dayjs";
 import { getEvents, createEvent } from "@/utils/api";
+import { useNotifications } from "@/hooks/useNotifications";
+
 
 export default function Home() {
   const [events, setEvents] = useState<any[]>([]);
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [modalVisible, setModalVisible] = useState(false);
   const [form] = Form.useForm();
+  useNotifications(events);
+
 
   useEffect(() => {
     fetchEvents();
