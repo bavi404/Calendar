@@ -82,15 +82,3 @@ Calendar/
 👨‍🎓 Developer
 Bavishya Sankaranarayanan
 
-yaml
-Copy
-Edit
-
----
-
-Commit:
-
-```bash
-git add README.md
-git commit -m "docs: added full project README with setup and features"
-git push
